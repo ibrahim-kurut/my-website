@@ -568,7 +568,10 @@ a {
   text-align: center;
   color: var(--text-color);
   text-transform: capitalize;
+
 }
+
+
 
 #our-skills .skill-box .skill-progress {
   height: 30px;
@@ -590,6 +593,8 @@ a {
   color: var(--main-color);
   border-radius: 5px;
 }
+
+
 
 /* ================ end our skills section  ================ */
 

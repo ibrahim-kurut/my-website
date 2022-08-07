@@ -1,0 +1,704 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+:root{
+    --black-color:#212529;
+    --blue-color:rgb(67, 132, 253);
+    --silver-color:#f9f9f9;
+}
+body{
+    font-family: sans-serif;
+    /* height: 8000px; */
+    position: relative;
+}
+.butonToTop{
+    width: 40px;
+    height: 40px;
+    background-color: var(--blue-color);
+    border-radius: 50%;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    position: fixed;
+    display: none;
+}
+.butonToTop .fa-angle-double-up{
+    font-size: 1.8rem;
+    color: rgb(233, 233, 233);
+    font-weight: 100;
+}
+/*********************** üst myNavBar başlangıç ***********************/
+.myNavBar{
+    height: 3rem;
+    background-color: var(--black-color);
+}
+.myNavBar .topnav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform:capitalize ;
+    height: 3rem;
+}
+.myNavBar .topnav .logo{
+    padding: 0;
+    margin: 0;
+}
+.myNavBar .topnav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.myNavBar .topnav ul li{
+    display: inline-block;
+}
+.myNavBar .topnav ul li a.x{
+    color: var(--blue-color);
+}
+.myNavBar .topnav a{
+    height: 3rem;
+    line-height: 3rem;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+/*********************** orta myNavBar başlangıç ***********************/
+.mdlenav{
+    height: 3rem;
+}
+.mdlenav .logo{
+    margin-top: 15px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.mdlenav .logo span{
+    color: var(--blue-color);
+}
+.mdlenav .arama{
+    margin-top: 20px;
+    width: 400px;
+    margin-right: 150px;
+
+
+}
+.mdlenav .arama span{
+    cursor: pointer;
+}
+.mdlenav .arama span .fa-search{
+    color: #fff;
+    font-weight: 100;
+}
+.mdlenav .favori{
+    width: 70px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mdlenav .favori div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgb(138, 138, 138);
+    border-radius: 50%;
+}
+/*********************** alt NavBar başlangıç ***********************/
+.nav .nav-item a:not(.active){
+    color: black;
+}
+.nav .nav-item a{
+    text-transform: capitalize;
+
+}
+.sosyal{
+    width:210px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.sosyal p{
+    margin-top: 15px;
+}
+.sosyal div{
+    width: 25px;
+    height: 25px;
+    border: 1px solid rgb(155, 155, 155);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mymargin{
+    margin-bottom: -20px;
+    margin-top: -20px;
+}
+/*********************** myslide başlangıç ***********************/
+.myslide{
+    height: 500px;
+    background-color: rgb(204, 204, 204);
+}
+.carousel-indicators button{
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50%;
+    background-color: var(--blue-color) !important;
+    
+}
+#mycarosel .myarrow{
+    
+    width: 30px;
+    height: 30px;
+    top: 45%;
+    padding: 5px;
+    border-radius: 2px;
+}
+#mycarosel .myprev .fa-chevron-left,
+#mycarosel .mynext .fa-chevron-right{
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+#mycarosel .myprev .fa-chevron-left{
+    position: absolute;
+    left: 50px;
+    
+}
+#mycarosel .mynext .fa-chevron-right{
+    position: absolute;
+    right: 50px;
+}
+.myslide .said-img{
+    position: relative;
+}
+.myslide .said-img .imgtext{
+    position: absolute;
+    top: 50px;
+    left: 10px;
+}
+.myslide .said-img .imgtext p{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.myslide .said-info{
+    height: 49%;
+}
+.myslide .said-info .zz{
+    padding: 10px;
+}
+/* ******************** start section one ******************** */
+
+#Featur{
+    height: fit-content;
+
+}
+
+.mytitle{
+    text-align: center;
+    position: relative;
+    margin-top: 5rem;
+    padding: 20px 0;
+}
+.mytitle h2{
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.mytitle h2::after{
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: "";
+    width: 5rem;
+    height: .05rem;
+    background-color: var(--blue-color);
+}
+.mytitle p{
+    padding-top: 2rem;
+    width: 25rem;
+    margin: 0 auto;
+}
+
+#Featur .box{
+    width: 100%;
+    height: 14rem;
+    border: 1px solid rgb(204, 204, 204);
+    cursor: pointer;
+}
+#Featur .box h5{
+    padding-left: 15px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+#Featur .box .list{
+    list-style: none;
+}
+#Featur .box .list li{
+    display: block;
+}
+#Featur .box .list li a{
+    display: block;
+    text-decoration: none;
+    color: rgb(98, 98, 98);
+    text-transform: capitalize;
+    transition: all .3s ease-in-out;
+}
+#Featur .box .list li a:hover{
+    transform: translateX(5px);
+    color: black;
+}
+
+#Featur .box .imgbox{
+    transition: all .3s ease-in-out;
+}
+#Featur .box:hover .imgbox{
+    transform: translateX(30px) scale(1.3);
+}
+
+/* ******************** start section two ******************** */
+
+#myCrad{
+    height: fit-content;
+    background-color:var(--silver-color) ;
+    margin-top: 5rem;
+}
+#myCrad .mytitle{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.boxCard .card-text{
+    font-size: .9rem !important;
+}
+.boxCard .card{
+    border: 10px solid #fff;
+    outline:1px solid rgb(231, 231, 231);
+    cursor: pointer;
+}
+.boxCard .card .img{
+    position: relative;
+    overflow: hidden;
+}
+.boxCard .card .img a{
+    position: absolute;
+    bottom: -80px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all .3s ease-in-out;
+    width: fit-content;
+    text-transform: capitalize;
+}
+
+.boxCard .card:hover a{
+    bottom: 0px;
+
+}
+
+.boxCard .card-title{
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding-top: .5rem;
+    padding-bottom: .3rem;
+}
+.boxCard .star .fa-star{
+    color: gold;
+    font-size: .8rem;
+}
+.boxCard .price{
+    color: var(--blue-color);
+    padding-top: 1rem;
+}
+
+/* ******************** start section three ******************** */
+
+#banner{
+   height: fit-content;
+    background-color: var(--silver-color);
+}
+#banner .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#banner .banner-left,
+#banner .banner-right{
+    border: 1px solid rgb(232, 232, 232);
+    background-color: var(--silver-color);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    width: 49.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgb(174, 174, 174);
+    outline: 3px solid rgb(247, 247, 247);
+}
+#banner .banner-left::after,
+#banner .banner-right::after{
+    width: 250px;
+    height: 300px;
+    background-color: rgb(179, 179, 179);
+    opacity: .2;
+    position: absolute;
+    content: "";
+    top: 150px;
+    left: 0;
+    transform: skewY(40deg);
+}
+#banner .banner-left::before,
+#banner .banner-right::before{
+    width: 350px;
+    height: 410px;
+    background-color: rgb(179, 179, 179);
+    opacity: .2;
+    position: absolute;
+    content: "";
+    top: -147px;
+    right: -50px;
+    transform: skewY(50deg);
+}
+#banner .banner-left .info-banner,
+#banner .banner-right .info-banner{
+    width: 50%;
+    position: relative;
+    z-index: 1; 
+}
+#banner .banner-left .info-banner a,
+#banner .banner-right .info-banner a{
+    text-transform: capitalize;
+}
+#banner .banner-left .img-banner,
+#banner .banner-right .img-banner{
+    width: 50%;
+    transition: all .4s linear;
+}
+#banner .banner-left .img-banner img,
+#banner .banner-right .img-banner img{
+    width: 100%;
+    position: relative;
+    
+}
+#banner .banner-left:hover .img-banner,
+#banner .banner-right:hover .img-banner{
+    transform: scale(1.3) rotate(-20deg);
+}
+#banner .banner-right .img-banner img{
+    width: 75%;
+}
+
+/*************** start section four*************/
+#special-offer{
+    margin-bottom: 50px;
+}
+
+
+.specialList{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    margin: 5rem auto 2rem auto;
+}
+
+.specialList li{
+    text-transform: capitalize;
+    font-size: 1rem;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.specialList li.activ{
+    color: var(--silver-color);
+    background-color: var(--blue-color);
+    font-weight: bold;
+}
+.galeri{
+    position: relative;
+    top:0;
+    margin-bottom: 50px;
+    
+}
+
+.galeri .galeriImg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    
+}
+.galeri .x{
+    display: block;
+}
+
+.galeri .galeriImg .img{
+    
+    border: 1px solid rgb(233, 232, 232);
+}
+.galeri .galeriImg .row{
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+.galeri .galeriImg .img img{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* **************start section popularBrands ************** */
+#popularBrands{
+    background-color: var(--silver-color);
+    margin-top: 200px;
+    padding-bottom: 50px;
+    
+}
+#popularBrands .mytitle h2{
+    font-size: 1.3rem;
+}
+
+#popularBrands .row{
+    width: 90%;
+    height: 150px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+
+#popularBrands .brand{
+    width: 200px;
+    border:1px solid rgb(197, 197, 197);
+    margin-left: 5px;
+    
+    
+   
+}
+#popularBrands .brand img{
+    width:100% ; 
+}
+
+#popularBrands .brand1,
+#popularBrands .brand2,
+#popularBrands .brand3,
+#popularBrands .brand4,
+#popularBrands .brand5{
+    position: absolute;
+    animation: slide 15s infinite linear;
+
+}
+
+#popularBrands .brand2{
+    left: 1500px;
+    animation-delay:3s;
+}
+#popularBrands .brand3{
+    left: 3000px;
+    animation-delay:6s;
+}
+#popularBrands .brand4{
+    left: 4000px;
+    animation-delay:9s;
+}
+#popularBrands .brand5{
+    left: 5000px;
+    animation-delay:12s;
+}
+
+@keyframes slide {
+    0%{
+        left: 0;
+    }
+    100%{
+        left: -210px;
+    }
+    0%{
+        left: 1000px;
+    }
+  
+    
+}
+
+/* **************end section popularBrands ************** */
+
+/* ************** start section ourWorks ************** */
+#ourWorks{
+    margin-top: 10px;
+    padding-bottom: 50px;
+}
+
+#ourWorks .card{
+    width: 375px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+#ourWorks .card:hover img {
+    transition:all .5s linear;
+}
+#ourWorks .card:hover img {
+    transform: scale(1.1);
+}
+#ourWorks .card .card-body .tit{
+    text-decoration: none;
+    color: rgb(139, 139, 139);
+    font-style: italic;
+    font-size: 14px;
+}
+/* **************end section ourWorks ************** */
+
+/* ************** start footer ************** */
+#footer{
+    min-height: 200px;
+}
+.footerTop {
+    color:#fff;
+}
+.footerTop .logo a{
+    font-size: 30px;
+    text-decoration: none;
+    color:#fff;
+}
+.footerTop .logo a span{
+    color:var(--blue-color);
+}
+.footerTop .subscribe h4{
+    font-weight: bold;
+}
+.footerTop .subscribe p{
+    color: rgb(148, 148, 148);
+    font-size: 14px;
+}
+.footerTop .subscInput input{
+    width: 430px !important;
+}
+
+.container hr{
+    color: silver;
+}
+.mdlFooter{
+    color: rgb(196, 196, 196);
+}
+.mdlFooter h5{
+    position: relative;
+    margin-bottom: 25px;
+}
+.mdlFooter h5::after{
+    width: 100px;
+    height: 3px;
+    background-color: var(--blue-color);
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 0px;
+}
+.mdlFooter ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.mdlFooter ul li{
+    padding-bottom: 10px;
+    padding-left: 0;
+    margin-left: 0;
+}
+.mdlFooter ul li a{
+    color: rgb(196, 196, 196);
+    text-decoration: none;
+    transition:  all .3s ease-in-out;
+}
+.mdlFooter .Depar ul li a:hover,
+.mdlFooter .Cate ul li a:hover{
+    color: var(--blue-color);
+}
+.mdlFooter ul li .fa-google-play,
+.mdlFooter ul li .fa-apple{
+    font-size: 2rem;
+}
+
+.mdlFooter .secnd{
+    background-color: rgb(85, 85, 85);
+    transition:  all .5s ease-in-out;
+}
+.mdlFooter .secnd:hover{
+    background-color: var(--blue-color);
+}
+
+.bottomFooter{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+.bottomFooter .flowUs a{
+    color: #fff;
+    font-size: 1.1rem;
+    padding-left: 10px;
+    transition: all .3s linear;
+}
+.bottomFooter .flowUs a:hover{
+    color:var(--blue-color)
+}
+/* ************** end footer ************** */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
