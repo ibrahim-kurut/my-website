@@ -706,7 +706,9 @@ a {
   margin: 0 5px;
   box-shadow: 0 10px 10px #0b121d;
   transition: .3s ease;
+  text-transform: capitalize;
 }
+
 
 #portfolio .card:hover {
   box-shadow: 0 0 0 #0b121d;
