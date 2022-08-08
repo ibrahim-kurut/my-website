@@ -702,8 +702,19 @@ a {
 
 /* ================ start portfolio section  ================ */
 #portfolio .card {
-  background-color: var(--asid-color);
+  background-color: var(--asid-color) !important;
   margin: 0 5px;
+  box-shadow: 0 10px 10px #0b121d;
+  transition: .3s ease;
+}
+
+#portfolio .card:hover {
+  box-shadow: 0 0 0 #0b121d;
+}
+
+#portfolio .card img {
+
+  margin-top: 10px;
 }
 
 /* ================ end portfolio section  ================ */
