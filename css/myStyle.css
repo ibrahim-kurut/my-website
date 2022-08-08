@@ -700,6 +700,15 @@ a {
 } */
 /* ================ end timeLine section  ================ */
 
+/* ================ start portfolio section  ================ */
+#portfolio .card {
+  background-color: var(--asid-color);
+  margin: 0 5px;
+}
+
+/* ================ end portfolio section  ================ */
+
+
 /* ================ start contact-us section  ================ */
 #contact-us {
   padding-top: 50px;
