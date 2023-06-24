@@ -10,6 +10,11 @@
   font-family: 'Cairo', sans-serif;
 }
 
+.error {
+  color: rgb(240, 99, 99);
+  font-style: italic;
+}
+
 .typing,
 .typing-2 {
   color: var(--second-color);
@@ -204,7 +209,7 @@ a {
 }
 
 .aside .logo a {
-  font-family: 'Pacifico', cursive;
+  /* font-family: 'Pacifico', cursive; */
   font-size: 40px;
   position: relative;
   color: var(--text-color);
@@ -331,8 +336,9 @@ a {
 
 .home-info .name {
   color: var(--second-color);
-  font-family: 'Pacifico', cursive;
+  /* font-family: 'Pacifico', cursive; */
   text-transform: capitalize;
+  font-weight: 700;
 }
 
 .home-info p {
@@ -469,6 +475,7 @@ a {
   height: 35%;
   background-color: var(--second-color);
   /* height: 75%; */
+  margin-top: 2rem;
 }
 
 #services::after {
@@ -479,6 +486,7 @@ a {
   width: 50%;
   height: 35%;
   background-color: #c59650;
+  margin-top: 2rem;
 
 }
 
@@ -493,7 +501,7 @@ a {
 
 .service-info p {
   color: var(--p-color);
-  padding-bottom: 10rem;
+  padding-bottom: 5rem;
 }
 
 .services-details {
